@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Environment
+.env
+*.env
+TELEGRAM_BOT_TOKEN
+
+# Database file (sqlite) - مهم: این فایل نباید در گیت ذخیره شود
+archive.db
+
+# Logs
+*.log
