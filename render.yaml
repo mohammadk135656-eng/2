@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: telegram-archive-bot-service # نامی برای سرویس در Render
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python archive_bot.py # نام فایل اصلی را تغییر دهید اگر متفاوت است
+    branch: main
+    volumes:
+      - name: db_volume
+        path: /mnt/data # مسیری که دیتابیس در آن قرار دارد
+
+volumes:
+  db_volume:
+    name: db_volume
